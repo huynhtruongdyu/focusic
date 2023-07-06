@@ -10,15 +10,15 @@ type Config struct {
 	Port    string
 }
 
-func GetConfig() *Config {
+func GetConfig() (*Config, error) {
 	err := loadEnv()
 	if err != nil {
-		panic(err)
+		return nil, err
 	}
 	return &Config{
 		AppName: os.Getenv("APP_NAME"),
 		Port:    os.Getenv("PORT"),
-	}
+	}, nil
 }
 
 func loadEnv() error {
