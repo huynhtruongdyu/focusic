@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"focusic-api/config"
+	"focusic-api/database"
 	v1 "focusic-api/routers/v1"
 	"github.com/gin-gonic/gin"
 	"log"
@@ -16,6 +17,7 @@ var (
 
 func init() {
 	appConfig, err := config.GetConfig()
+	database.Init()
 	if err != nil {
 		panic(err)
 	}
