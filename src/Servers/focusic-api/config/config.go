@@ -6,21 +6,21 @@ import (
 )
 
 type Config struct {
-	AppName string
-	Port    string
+	AppName  string
+	Port     string
+	MongoUri string
 }
 
-func GetConfig() (*Config, error) {
-	err := loadEnv()
+func GetConfig() *Config {
+	err := godotenv.Load()
 	if err != nil {
-		return nil, err
+		return nil
 	}
 	return &Config{
-		AppName: os.Getenv("APP_NAME"),
-		Port:    os.Getenv("PORT"),
-	}, nil
+		AppName:  os.Getenv("APP_NAME"),
+		Port:     os.Getenv("PORT"),
+		MongoUri: os.Getenv("MONGODB_URI"),
+	}
 }
 
-func loadEnv() error {
-	return godotenv.Load()
-}
+var AppConfig = GetConfig()

@@ -16,12 +16,11 @@ var (
 )
 
 func init() {
-	appConfig, err := config.GetConfig()
-	database.Init()
-	if err != nil {
-		panic(err)
+	appConfig := config.AppConfig
+	if appConfig == nil {
+		panic("Cannot load .env")
 	}
-	port = ":" + appConfig.Port
+	database.ConnectMongoDb()
 
 	router = gin.Default()
 	router.GET("", func(context *gin.Context) {
@@ -34,6 +33,7 @@ func init() {
 	version1 := apiRoutes.Group("/v1")
 	v1.InitRoutes(version1)
 
+	port = ":" + appConfig.Port
 }
 
 func main() {

@@ -1,13 +1,14 @@
 package v1
 
 import (
-	"focusic-api/controllers/v1/auth"
+	authController "focusic-api/controllers/v1/auth"
 	"github.com/gin-gonic/gin"
 )
 
 const prefix = "/auth"
 
 func SetAuthRoutes(g *gin.RouterGroup) {
-	g.GET(prefix+"/login", auth.Login)
-	g.GET(prefix+"/logout", auth.Logout)
+	g.GET(prefix+"/login", authController.Login)
+	g.GET(prefix+"/logout", authController.Logout)
+	g.POST(prefix+"/signup", authController.SignUp)
 }
