@@ -7,6 +7,7 @@ import (
 
 func InitRoutes(g *gin.RouterGroup) {
 	SetAuthRoutes(g)
+	SetUsersRoutes(g)
 }
 
 func buildRoute(prefix, endpointPath string) string {
