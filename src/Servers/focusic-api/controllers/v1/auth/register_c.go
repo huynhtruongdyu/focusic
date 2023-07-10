@@ -8,7 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func SignUp(ctx *gin.Context) {
+func Register(ctx *gin.Context) {
 	var userCreateModel dto.UserCreateRequestModel
 	err := ctx.BindJSON(&userCreateModel)
 	if err != nil {

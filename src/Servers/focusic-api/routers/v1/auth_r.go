@@ -10,5 +10,5 @@ const AuthPrefix = "/auth"
 func SetAuthRoutes(g *gin.RouterGroup) {
 	g.GET(buildRoute(AuthPrefix, "login"), authController.Login)
 	g.GET(buildRoute(AuthPrefix, "logout"), authController.Logout)
-	g.POST(buildRoute(AuthPrefix, "signup"), authController.SignUp)
+	g.POST(buildRoute(AuthPrefix, "register"), authController.Register)
 }
