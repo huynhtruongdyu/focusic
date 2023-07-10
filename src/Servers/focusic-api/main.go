@@ -27,7 +27,7 @@ func init() {
 		context.JSON(http.StatusOK, appConfig.AppName)
 	})
 	router.Static("/public", "/public")
-	router.StaticFile("/favicon.ico", "./public/images/nuxt-logo.png")
+	router.StaticFile("/favicon.ico", "./public/images/logo-icon.png")
 
 	apiRoutes := router.Group("/api")
 	version1 := apiRoutes.Group("/v1")
