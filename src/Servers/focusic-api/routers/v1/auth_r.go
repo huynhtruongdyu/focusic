@@ -5,10 +5,10 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-const prefix = "/auth"
+const AuthPrefix = "/auth"
 
 func SetAuthRoutes(g *gin.RouterGroup) {
-	g.GET(prefix+"/login", authController.Login)
-	g.GET(prefix+"/logout", authController.Logout)
-	g.POST(prefix+"/signup", authController.SignUp)
+	g.GET(buildRoute(AuthPrefix, "login"), authController.Login)
+	g.GET(buildRoute(AuthPrefix, "logout"), authController.Logout)
+	g.POST(buildRoute(AuthPrefix, "signup"), authController.SignUp)
 }

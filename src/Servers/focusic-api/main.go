@@ -18,9 +18,9 @@ var (
 func init() {
 	appConfig := config.AppConfig
 	if appConfig == nil {
-		panic("Cannot load .env")
+		log.Fatalln("cannot.load.env")
 	}
-	database.ConnectMongoDb()
+	database.ConnectSqlite()
 
 	router = gin.Default()
 	router.GET("", func(context *gin.Context) {

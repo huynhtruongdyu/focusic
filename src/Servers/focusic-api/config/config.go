@@ -6,9 +6,9 @@ import (
 )
 
 type Config struct {
-	AppName  string
-	Port     string
-	MongoUri string
+	AppName      string
+	Port         string
+	SqliteDbName string
 }
 
 func GetConfig() *Config {
@@ -17,9 +17,9 @@ func GetConfig() *Config {
 		return nil
 	}
 	return &Config{
-		AppName:  os.Getenv("APP_NAME"),
-		Port:     os.Getenv("PORT"),
-		MongoUri: os.Getenv("MONGODB_URI"),
+		AppName:      os.Getenv("APP_NAME"),
+		Port:         os.Getenv("PORT"),
+		SqliteDbName: os.Getenv("SQLITE_DB_NAME"),
 	}
 }
 
