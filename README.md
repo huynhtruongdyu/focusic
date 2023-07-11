@@ -1,1 +1,2 @@
-# focusic
+# focusic.
+> This web application is designed to help users achieve deep work by providing a countdown timer and curated playlist of music that is scientifically proven to enhance focus and concentration. The goal of the application is to assist users in focusing on their tasks, reducing distractions, and increasing productivity. In addition, users can share their playlists with other users online, fostering a community of individuals who are all striving to achieve deep work and accomplish their goals more efficiently.
