@@ -5,6 +5,8 @@ import (
 	"path"
 )
 
+// @BasePath /api/v1
+// PingExample godoc
 func InitRoutes(g *gin.RouterGroup) {
 	SetAuthRoutes(g)
 	SetUsersRoutes(g)
