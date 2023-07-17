@@ -1,4 +1,4 @@
-namespace Focusic.UnitTests
+namespace focusic.UnitTests
 {
     public class UnitTest1
     {
