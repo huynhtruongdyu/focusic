@@ -1,3 +1,5 @@
 
 *.local
 *.db
+/src/Servers/FocusicSolution/.vs
+/src/Servers/FocusicSolution/src/Applications/Focusic.Application.Maui/obj

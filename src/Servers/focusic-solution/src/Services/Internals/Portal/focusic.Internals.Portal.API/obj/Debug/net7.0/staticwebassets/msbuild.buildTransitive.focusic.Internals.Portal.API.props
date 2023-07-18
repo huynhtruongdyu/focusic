@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\focusic.Internals.Portal.API.props" />
-</Project>

@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2D801D7A-6F3D-4475-9AB1-7B8737E0D011}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{0FCF1658-22F9-4A39-8875-4844AFA4D6EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Focusic.Application.Maui", "src\Applications\Focusic.Application.Maui\Focusic.Application.Maui.csproj", "{D1100905-414B-460F-8261-5A3E7A8B7296}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1100905-414B-460F-8261-5A3E7A8B7296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1100905-414B-460F-8261-5A3E7A8B7296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1100905-414B-460F-8261-5A3E7A8B7296}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D1100905-414B-460F-8261-5A3E7A8B7296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1100905-414B-460F-8261-5A3E7A8B7296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1100905-414B-460F-8261-5A3E7A8B7296}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0FCF1658-22F9-4A39-8875-4844AFA4D6EF} = {2D801D7A-6F3D-4475-9AB1-7B8737E0D011}
+		{D1100905-414B-460F-8261-5A3E7A8B7296} = {0FCF1658-22F9-4A39-8875-4844AFA4D6EF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DF72121-81C1-4AAD-B999-D0FEF3F3733B}
+	EndGlobalSection
+EndGlobal
